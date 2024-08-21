@@ -51,7 +51,7 @@ const Form = () => {
           value={name === 0 ? "" : name}
           onChange={(e) => setName(e.target.value)}
           required
-          placeholder="Aman Dhattarwal"
+          placeholder="Enter Patient Name"
         />
 
         <label htmlFor="age">Age:</label>
@@ -60,7 +60,7 @@ const Form = () => {
           id="age"
           name="age"
           required
-          placeholder="29"
+          placeholder="Select Age"
           value={age === 0 ? "" : age}
           onChange={(e) => setAge(e.target.value)}
         />
@@ -85,7 +85,7 @@ const Form = () => {
           id="name"
           name="name"
           required
-          placeholder="B positive"
+          placeholder="Select a blood type"
           value={bloodType === 0 ? "" : bloodType}
           onChange={(e) => setBloodType(e.target.value)}
         />
@@ -95,7 +95,7 @@ const Form = () => {
           id="name"
           name="name"
           required
-          placeholder="Pollen allergy"
+          placeholder="Type Allergy"
           value={allergies === 0 ? "" : allergies}
           onChange={(e) => setAllergies(e.target.value)}
         />
@@ -105,7 +105,7 @@ const Form = () => {
           id="name"
           name="name"
           required
-          placeholder="Osteoporosis"
+          placeholder="Type Diagnosis"
           value={diagnosis === 0 ? "" : diagnosis}
           onChange={(e) => setDiagnosis(e.target.value)}
         />
@@ -115,7 +115,7 @@ const Form = () => {
           id="name"
           name="name"
           required
-          placeholder="Surgery"
+          placeholder="Type Surgery"
           value={treatment === 0 ? "" : treatment}
           onChange={(e) => setTreatment(e.target.value)}
         />
