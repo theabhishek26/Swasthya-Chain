@@ -1,3 +1,28 @@
+// const { ethers } = require("hardhat");
+// const config = require("../src/config.json");
+
+// async function main() {
+//     const { chainId } = await ethers.provider.getNetwork();
+//     console.log(`Using chainId ${chainId}`);
+//     const account = await ethers.getSigners();
+//     const medical = await ethers.getContractAt(
+//         "MedicalRecords",
+//         config[chainId].MedicalRecords.address
+//     );
+//     console.log(`MedicalRecord smart contract fetched at ${medical.address}`
+//   );
+// }
+
+// main()
+//   .then(() => process.exit(0))
+//   .catch((error) => {
+//     console.log(error);
+//     process.exit(1);
+// });
+
+
+
+
 const { ethers } = require("hardhat");
 const config = require("../src/config.json");
 const wait = (seconds) => {
@@ -11,7 +36,7 @@ async function main() {
   const account = await ethers.getSigners();
   const medical = await ethers.getContractAt(
     "MedicalRecords",
-    config[chainId].medical.address
+    config[chainId].MedicalRecords.address
   );
   console.log(`MedicalRecord smart contract fetched at ${medical.address}`);
   let transactionResponse;

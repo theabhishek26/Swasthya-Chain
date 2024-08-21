@@ -24,7 +24,7 @@ function App() {
     const medical_config = config[chainId].medical;
     window.ethereum.on("accountsChanged", () => {
       loadAccount(provider, dispatch);
-    });
+    });                                     
     window.ethereum.on("chainChanged", () => {
       window.location.reload();
     });
