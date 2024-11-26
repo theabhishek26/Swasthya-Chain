@@ -68,8 +68,6 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a pull request
 
-## License
-Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 Abhishek - [abhishek26kashyap@gmail.com](mailto:your-email@example.com)
