@@ -11,9 +11,11 @@ const Navbar = () => {
   const account = useSelector((state) => state.provider.account);
   const balance = useSelector((state) => state.provider.balance);
   const chainId = useSelector((state) => state.provider.chainId);
+
   const connectHandler = async (e) => {
     await loadAccount(provider, dispatch);
   };
+
   const networkHandler = async (e) => {
     await window.ethereum.request({
       method: "wallet_switchEthereumChain",
@@ -24,6 +26,8 @@ const Navbar = () => {
       ],
     });
   };
+
+  
   return (
     <div className="Navbar">
       <div className="nav__name">
@@ -40,9 +44,10 @@ const Navbar = () => {
           <option value="0" disabled>
             Select Network
           </option>
-          <option value="31337">Localhost</option>
+          <option value="0x7A69">Localhost</option>
+          <option value="0xaa36a7">Sepolia</option>
           <option value="0x5">Goerli</option>
-          <option value="0x13881">Mumbai</option>
+          {/* <option value="0x13881">Mumbai</option> */}
         </select>
       </div>
       <div className="nav__balance">

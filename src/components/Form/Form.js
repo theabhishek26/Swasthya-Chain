@@ -29,13 +29,13 @@ const Form = () => {
     setDiagnosis(0);
     setTreatment(0);
   };
-  const [name, setName] = useState(0);
-  const [age, setAge] = useState(0);
-  const [gender, setGender] = useState(0);
-  const [bloodType, setBloodType] = useState(0);
-  const [allergies, setAllergies] = useState(0);
-  const [diagnosis, setDiagnosis] = useState(0);
-  const [treatment, setTreatment] = useState(0);
+  const [name, setName] = useState("");
+  const [age, setAge] = useState("");
+  const [gender, setGender] = useState("");
+  const [bloodType, setBloodType] = useState("");
+  const [allergies, setAllergies] = useState("");
+  const [diagnosis, setDiagnosis] = useState("");
+  const [treatment, setTreatment] = useState("");
 
   return (
     <div className="login-container">

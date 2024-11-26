@@ -21,7 +21,7 @@ function App() {
   const loadBlockchainData = async () => {
     const provider = loadProvider(dispatch);
     const chainId = await loadNetwork(provider, dispatch);
-    const medical_config = config[chainId].medical;
+    const medical_config = config[chainId].MedicalRecords;
     window.ethereum.on("accountsChanged", () => {
       loadAccount(provider, dispatch);
     });                                     
@@ -48,6 +48,9 @@ function App() {
       </div>
     </div>
   );
-}
+}  
 
 export default App;
+  
+    
+  
